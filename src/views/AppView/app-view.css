@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700,700i&subset=latin-ext');
+
+body {
+  margin: default;
+  background-color: rgb(231, 231, 231);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-gap: 4%;
+  margin: 0%;
+  padding: 1%;
+}
+
+ul li {
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 3%;
+  height: 365px;
+}
+
+ul li:hover {
+  background-color: red;
+  color: white;
+  transition: all 0.2s;
+  transform: scale(1.05);
+}
+
+ul li .preview {
+  position: relative;
+  top: 3%;
+}
+
+ul li .preview img {
+  width: 100%;
+}
+
+ul li .name {
+  z-index: 2;
+  position: relative;
+  bottom: 30%;
+}
+
+ul li .name .nameContent {
+  background-color: yellow;
+  padding: 3% 2%;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.15em;
+  font-weight: bold;
+  line-height: 1.2em;
+  height: 2.4em;
+  vertical-align: middle;
+  /* min-height: 2.4em; */
+}
+
+ul li .author {
+  padding: 0.5% 0%;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  bottom: 14%;
+}
+
+ul li .date {
+  padding: 0.5% 0%;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  bottom: 14%;
+}
+
+ul li .views {
+  padding: 0.5% 0%;
+  font-size: 0.9em;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  bottom: 14%;
+}
+
+ul li .description {
+  padding: 0.5% 2%;
+  font-size: 0.8em;
+  position: relative;
+  bottom: 14%;
+}
